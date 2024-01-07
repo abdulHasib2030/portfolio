@@ -10,6 +10,10 @@
   --fontColor: #DCF2F1;
   --buttonColor: #7FC7D9;
 }
+::selection{
+  background: var(--backgroundColor);
+  color: var(--buttonColor);
+}
 body {
   font-family: "Lato", sans-serif;
   background: var(--backgroundColor);
@@ -58,7 +62,7 @@ body {
 #hero .container {
   display: flex;
   margin-top: 100px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .first_child h4 {
   font-size: 22px;
@@ -102,6 +106,9 @@ body {
 .first_child button:last-child {
   background: var(--backgroundColor);
   
+}
+.first_child{
+  margin-right:100px;
 }
 
 .second_child {
@@ -439,6 +446,9 @@ nav .menu-btn i{
 }
 
 @media screen and (max-width:550px){
+  .first_child{
+    margin: 0;
+  }
   .skill_child h4{
     font-size: 15px;
     padding: 5px;
